@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    background-image: linear-gradient(to right,red,orange,yellow);
 }
 .name_of_objects,#result_object_name,#result_object_accuracy{
 color: white;    

@@ -14,4 +14,12 @@ function take_snapshot()
     });
 }
 console.log('mi5 version:',ml5.version);
-classifier=ml5.imageClasifier('https://teachablemachine.withgoogle.com/models/Yxh1f3EeW/model.json',modelLoaded);
+classifier=ml5.imageClasifier('https://teachablemachine.withgoogle.com/models/v5SUJ5Npd/model.json',modelLoaded);
+function modelLoaded() {
+    console.log('Model Loaded');
+}
+function check() 
+{
+    img = document.getElementById('captured_image');
+    classifier.classify(img, gotResult);
+}
